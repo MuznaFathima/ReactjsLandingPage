@@ -1,0 +1,151 @@
+
+
+.prod-card{
+
+    display: flex;
+    flex-direction: row;
+}
+
+.product-card{
+
+    width: 23.75rem;
+    position: relative;
+    box-shadow: 0 0.1rem 0.4rem #dfdfdf;
+    margin: 3rem auto ;
+    background: #fafafa;
+   
+}
+.badge{
+    position: absolute;
+    left: 0;
+    top: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8rem;
+    background: red
+    ;
+    padding: 0.18rem 0.625rem;
+}
+
+.product-t{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    padding: 50px;
+
+
+}
+.product-t img{
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.product-t:hover img {
+    transform: scale(1.1); /* Optionally, add a zoom effect on hover */
+    transition: transform 0.2s; /* Apply the transition effect to the hover state */
+}
+
+
+
+
+.product-details{
+    padding: 1.8rem;
+
+}
+.product-c{
+    display: block;
+   
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ccc;
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+
+}
+.product-details h4 a{
+
+    font-weight: 500;
+    display: block;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: #363636;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.product-details h4 a:hover {
+    color: #fbb72c;
+}
+.product-details p {
+    font-size: 0.9rem;
+    line-height: 1.375rem;
+    margin-bottom: 1.125rem;
+    color: #999;
+}
+.product-bottom-details{
+
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+.product-bottom-details div {
+    float: left;
+    width: 50%;
+}
+.product-price {
+    font-size: 1rem;
+    color: #fbb72c;
+    font-weight: 600;
+}
+.product-price small {
+    font-size: 80%;
+    font-weight: 400;
+    text-decoration: line-through;
+    display: inline-block;
+    margin-right: 5px;
+}
+.product-links {
+    text-align: right;
+}
+.product-links a {
+    display: inline-block;
+    margin-left: 5px;
+    color: rgb(248, 91, 91);
+    transition: 0.3s;
+    font-size: 1rem;
+}
+.product-links a:hover {
+    color: #fbb72c;
+}
+.rows{
+    display: flex;
+    flex-direction: row;
+    margin-left: 3rem;
+    column-gap: 50px;
+}
+
+@media  screen and (max-width:850px) {
+
+    .product-card{
+
+        width: 100%;
+   
+        
+    }
+
+    .prod-card{
+
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+    .product-t img{
+
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+ 
+}

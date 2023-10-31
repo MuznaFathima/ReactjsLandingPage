@@ -1,0 +1,74 @@
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: space-around;
+
+    
+  }
+  
+  .cta {
+    background: #333;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    width: 360px;
+ 
+  }
+  
+  .cta:hover img {
+    top: -10%;
+    filter: brightness(70%);
+  }
+  
+  .cta img {
+    bottom: 0;
+    filter: brightness(100%);
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.5s ease-in-out;
+    width: 115%;
+  }
+  
+  .cta .text {
+    bottom: -40%;
+    padding: 15px;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .cta:hover .text {
+    bottom: 0;
+  }
+  
+  .cta .text h2 {
+    color: #fff;
+    display: inline-block;
+    font-weight: 300;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  
+  .cta .text p {
+    color: #fff;
+    font-weight: 300;
+  }
+  
+
+  @media screen and (max-width:850px){
+   .container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+   }
+
+   .cta {
+    width: 90%; /* Adjust the width as needed for smaller screens */
+    margin: 20px 0; /* Add space between items */
+  }
+  }
